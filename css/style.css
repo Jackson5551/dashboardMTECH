@@ -12,18 +12,53 @@ nav .profileArea {
 }
 
 #sidebar {
+  font-family: sans-serif;
   height: 100%;
   position: fixed;
   left: 0px;
   top: 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #1D3557;
-  transition: all 0.75s;
+}
+#sidebar #logo {
+  background-image: url(../img/image.png);
+  background-position: center;
+  background-size: cover;
+  width: 17vh;
+  height: 17vh;
+}
+#sidebar #logout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#sidebar #link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 #sidebar .sidelink {
   text-decoration: none;
   color: #ffffff;
+  padding: 10px;
+  width: 100%;
+}
+#sidebar .sidelink:hover {
+  background-color: #ffffff;
+  color: #1D3557;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#sidebar .activesidelink {
+  border-left: 2px solid #ffffff;
+  background-color: #112034;
 }
 
 body {
