@@ -1,3 +1,14 @@
+#Inbox {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.email {
+  height: 100px;
+  border: 1px solid #000000;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -9,6 +20,10 @@ nav .profileArea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#messaging {
+  overflow-y: auto;
 }
 
 body {
