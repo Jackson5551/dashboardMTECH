@@ -1,8 +1,10 @@
 @use "_var";
-#inbox {
+#List {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    margin-left: auto;
+    width: 30vw;
 }
 .email {
     height: 100px;

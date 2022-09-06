@@ -1,4 +1,9 @@
 @use "_var";
 #messaging {
     overflow-y: auto;
+    width: 50vw;
+}
+#Inbox {
+    display: flex;
+    flex-direction: row;
 }
