@@ -1,1 +1,59 @@
 @use "_var";
+
+#sidebar {
+    font-family: var.$font-stack;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var.$primary-blue;
+
+    // padding-top: 60px;
+    // transition: all .75s;
+    #logo {
+        background-image: url(../img/image.png);
+        background-position: center;
+        background-size: cover;
+        width: 17vh;
+        height: 17vh;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #link {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .sidelink {
+        text-decoration: none;
+        color: var.$primary-white;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .sidelink:hover {
+        background-color: var.$primary-white;
+        color: var.$primary-blue;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .activesidelink {
+        border-left: 2px solid var.$primary-white;
+        background-color: var.$secondary-blue;
+    }
+}
