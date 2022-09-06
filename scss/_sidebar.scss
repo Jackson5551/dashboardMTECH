@@ -1,1 +1,18 @@
 @use "_var";
+
+#sidebar {
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: var.$primary-blue;
+    // padding-top: 60px;
+    transition: all .75s;
+
+    .sidelink {
+        text-decoration: none;
+        color: var.$primary-white;
+    }
+}

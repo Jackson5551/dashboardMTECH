@@ -11,6 +11,21 @@ nav .profileArea {
   align-items: center;
 }
 
+#sidebar {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D3557;
+  transition: all 0.75s;
+}
+#sidebar .sidelink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 body {
   margin: 0;
   padding: 0;
