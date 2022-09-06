@@ -1,6 +1,12 @@
 @use '_var';
 
+@use '_messages';
+@use '_nav';
+@use '_sidebar';
+@use '_viewMessage';
+
 body{
     margin: 0;
     padding: 0;
 }
+

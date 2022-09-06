@@ -1,0 +1,18 @@
+@use '_var';
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var.$primary-white;
+
+    .searchBar{
+        
+    }
+    .profileArea{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
