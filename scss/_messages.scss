@@ -1,2 +1,7 @@
 @use "_var";
-
+#inbox {
+    overflow-y: auto;
+}
+.email {
+    height: 100px;
+}
