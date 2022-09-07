@@ -11,15 +11,38 @@
 
 nav {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+}
+nav .items {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #ffffff;
+  max-width: fit-content;
+}
+nav .searchBar {
+  border: none;
+  width: 30vw;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav .searchBar:focus {
+  outline: none;
+}
+nav .searchArea {
+  padding: 5px;
+  border: 1px solid #1D3557;
 }
 nav .profileArea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 10px;
 }
 
 #sidebar {
@@ -36,6 +59,18 @@ nav .profileArea {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #1D3557;
+  overflow-y: auto;
+}
+#sidebar .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sidebar .top span {
+  display: flex;
+  align-self: flex-end;
+  padding-top: 5px;
 }
 #sidebar #logo {
   background-image: url(../img/image.png);
@@ -49,6 +84,7 @@ nav .profileArea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 10px;
 }
 #sidebar #link {
   display: flex;
