@@ -7,6 +7,10 @@
     overflow-y: scroll;
     position: fixed;
     width: fit-content;
+<<<<<<< HEAD
+=======
+    font-family: var.$font-stack;
+>>>>>>> aaron
 }
 
 
@@ -14,16 +18,36 @@
     // height: fit-content;
     width: 100%;
     //border: 1px solid #000000;
-    // border-bottom: 2.5px solid var.$prussian-blue;
+    border-bottom: 1px solid var.$primary-gray;
     // border-top: 2.5px solid var.$prussian-blue;
     // border-left: 5px solid var.$prussian-blue;
     // border-right: 5px solid var.$prussian-blue;
     font-size: small;
-    padding: 10px;
+    padding: 15px;
+    font-family: var.$font-stack;
+}
+
+.email:hover {
+    background-color: var.$primary-gray;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .email-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+}
+
+.emial h2, h3 {
+    margin: 0px;
+}
+
+.email a {
+    color: var.$imperial-red;
+}
+
+.selected {
+    background-color: var.$primary-gray;
+    border-left: 2px solid var.$imperial-red;
 }
