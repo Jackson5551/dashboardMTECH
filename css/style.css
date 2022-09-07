@@ -217,17 +217,21 @@ nav .openBtn {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 10%;
+  min-width: 10%;
 }
 
 #overprofile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #profile {
   display: flex;
   justify-content: space-between;
+}
+#profile h4 {
+  padding-left: 10px;
 }
 
 #messaging a {
