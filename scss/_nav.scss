@@ -9,13 +9,15 @@ nav {
     position: fixed;
     border-bottom: 5px solid var.$prussian-blue;
     z-index: 1;
+    // left: 192px;
 
     .items {
         display: flex;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        max-width: fit-content;
+        // max-width: fit-content;
     }
 
     .searchBar {
@@ -26,10 +28,12 @@ nav {
         margin-left: 10px;
         margin-right: 10px;
     }
-    .searchBar:focus{
+
+    .searchBar:focus {
         outline: none;
     }
-    .searchArea{
+
+    .searchArea {
         padding: 5px;
         border: 1px solid var.$primary-blue;
     }
@@ -41,4 +45,22 @@ nav {
         margin-left: 10px;
     }
 
+}
+
+@media (mim-width: var.$breakpoint-desktop) {
+    .openBtn {
+        display: none;
+    }
+}
+
+@media (min-width: var.$breakpoint-tablet) {
+    .openBtn {
+        display: block;
+    }
+}
+
+@media (mim-width: var.$breakpoint-mobile) {
+    .openBtn {
+        display: block;
+    }
 }

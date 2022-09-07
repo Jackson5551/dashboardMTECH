@@ -30,10 +30,10 @@
     // padding-top: 60px;
     // transition: all .75s;
     #logo {
-        background-image: url(../img/image.png);
+        background-image: url(../img/RobCo_logo.webp);
         background-position: center;
         background-size: cover;
-        width: 17vh;
+        // width: 17vh;
         height: 17vh;
     }
 
@@ -70,3 +70,14 @@
         background-color: var.$secondary-blue;
     }
 }
+
+@media (max-width: var.$breakpoint-desktop) {
+    #sidebar{
+        left: -200px;
+    }
+}
+
+@media (min-width: var.$breakpoint-tablet) {
+}
+
+@media (min-width: var.$breakpoint-mobile) {}
