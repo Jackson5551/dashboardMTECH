@@ -19,6 +19,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     overflow-y: scroll;
     #inbox{
         // width: 20vw;
