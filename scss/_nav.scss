@@ -7,15 +7,17 @@ nav {
     width: 100%;
     background-color: var.$primary-white;
     position: fixed;
-    border-bottom: 5px solid var.$prussian-blue;
+    border-bottom: 1px solid var.$primary-gray;
     z-index: 1;
+    // left: 192px;
 
     .items {
         display: flex;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        max-width: fit-content;
+        // max-width: fit-content;
     }
 
     .searchBar {
@@ -25,13 +27,17 @@ nav {
         height: 20px;
         margin-left: 10px;
         margin-right: 10px;
+        background-color: var.$primary-gray;
     }
-    .searchBar:focus{
+
+    .searchBar:focus {
         outline: none;
     }
-    .searchArea{
+
+    .searchArea {
         padding: 5px;
-        border: 1px solid var.$primary-blue;
+        // border: 1px solid var.$primary-blue;
+        background-color: var.$primary-gray;
     }
 
     .profileArea {
@@ -39,6 +45,25 @@ nav {
         justify-content: space-between;
         align-items: center;
         margin-left: 10px;
+        font-family: var.$font-stack;
     }
 
+}
+
+@media (mim-width: var.$breakpoint-desktop) {
+    .openBtn {
+        display: none;
+    }
+}
+
+@media (min-width: var.$breakpoint-tablet) {
+    .openBtn {
+        display: block;
+    }
+}
+
+@media (mim-width: var.$breakpoint-mobile) {
+    .openBtn {
+        display: block;
+    }
 }

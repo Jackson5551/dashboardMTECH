@@ -16,17 +16,21 @@
     padding-right: 20px;
     background-color: var.$primary-blue;
     overflow-y: auto;
-    .top{
+    transition: all 1s;
+
+    .top {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        span{
+
+        span {
             display: flex;
             align-self: flex-end;
             padding-top: 5px;
         }
     }
+
     // padding-top: 60px;
     // transition: all .75s;
     #logo {
@@ -69,4 +73,25 @@
         border-left: 2px solid var.$primary-white;
         background-color: var.$secondary-blue;
     }
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+    #sidebar {
+        left: 0px;
+        transition: all 1s;
+    }
+}
+
+@media (max-width: var.$breakpoint-tablet) {
+    #sidebar {
+        left: -200px;
+        transition: all 1s;
+    }
+}
+
+@media (min-width: var.$breakpoint-mobile) {
+    // #sidebar {
+    //         left: -200px;
+    //         transition: all 1s;
+    //     }
 }
