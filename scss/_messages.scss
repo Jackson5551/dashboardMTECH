@@ -29,6 +29,10 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.selected:hover {
+    box-shadow: none;
+}
+
 .email-flex {
     display: flex;
     justify-content: space-between;
@@ -46,5 +50,6 @@
 
 .selected {
     background-color: var.$primary-gray;
-    border-left: 2px solid var.$imperial-red;
+    border-left: 10px solid var.$imperial-red;
+    padding-right: 5px;
 }

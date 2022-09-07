@@ -22,6 +22,10 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.selected:hover {
+  box-shadow: none;
+}
+
 .email-flex {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,8 @@
 
 .selected {
   background-color: #D9D9D9;
-  border-left: 2px solid #e63946;
+  border-left: 10px solid #e63946;
+  padding-right: 5px;
 }
 
 nav {
@@ -186,6 +191,52 @@ nav .openBtn {
   left: 603px;
   max-width: fit-content;
   font-family: sans-serif;
+  top: 45px;
+}
+
+.sender {
+  padding-top: 20px;
+}
+
+#profilepic {
+  width: 50px;
+  height: 50px;
+}
+
+.TheBold {
+  font-weight: bold;
+}
+
+.messages-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+#overprofile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#messaging a {
+  color: #e63946;
+}
+
+#signature {
+  width: 400px;
+  height: 80px;
 }
 
 body {
