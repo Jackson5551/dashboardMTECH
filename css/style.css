@@ -79,6 +79,7 @@ nav .profileArea {
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
+  font-family: sans-serif;
 }
 
 @media (mim-width: 1200px) {
@@ -208,7 +209,7 @@ main #messaging {
 @media (max-width: 768px) {
   main {
     position: relative;
-    top: 0;
+    top: 45;
     left: 0;
     max-width: 100%;
     display: flex;
