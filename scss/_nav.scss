@@ -1,18 +1,44 @@
 @use '_var';
 
-nav{
+nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    width: 100%;
     background-color: var.$primary-white;
+    position: fixed;
+    border-bottom: 5px solid var.$prussian-blue;
+    z-index: 1;
 
-    .searchBar{
-        
-    }
-    .profileArea{
+    .items {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
+        max-width: fit-content;
     }
+
+    .searchBar {
+        border: none;
+        // box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        width: 30vw;
+        height: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .searchBar:focus{
+        outline: none;
+    }
+    .searchArea{
+        padding: 5px;
+        border: 1px solid var.$primary-blue;
+    }
+
+    .profileArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+    }
+
 }

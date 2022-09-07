@@ -10,3 +10,20 @@ body{
     padding: 0;
 }
 
+main{
+    position: relative;
+    // z-index: -1;
+    top: 45px;
+    left: 192px;
+    max-width: calc(100% - 192px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    #inbox{
+        // width: 20vw;
+    }
+    #messaging{
+        width: 100%;
+    }
+}
