@@ -4,16 +4,20 @@
   justify-content: center;
   align-items: center;
   overflow-y: scroll;
-  border: 5px solid #1d3557;
   position: fixed;
   width: fit-content;
 }
 
 .email {
   width: 100%;
-  border: 1px solid #000000;
   font-size: small;
-  padding: 20px;
+  padding: 10px;
+}
+
+.email-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {

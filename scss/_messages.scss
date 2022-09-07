@@ -5,18 +5,25 @@
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
-    border: 5px solid var.$prussian-blue;
     position: fixed;
     width: fit-content
 }
+
+
 .email {
     // height: fit-content;
     width: 100%;
-    border: 1px solid #000000;
+    //border: 1px solid #000000;
     // border-bottom: 2.5px solid var.$prussian-blue;
     // border-top: 2.5px solid var.$prussian-blue;
     // border-left: 5px solid var.$prussian-blue;
     // border-right: 5px solid var.$prussian-blue;
     font-size: small;
-    padding: 20px;
+    padding: 10px;
+}
+
+.email-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
