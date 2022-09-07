@@ -46,5 +46,6 @@
 
 .selected {
     background-color: var.$primary-gray;
-    border-left: 2px solid var.$imperial-red;
+    border-left: 10px solid var.$imperial-red;
+    padding-right: 5px;
 }
