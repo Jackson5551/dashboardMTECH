@@ -1,6 +1,7 @@
 @use "_var";
 
 #sidebar {
+    z-index: 2;
     font-family: var.$font-stack;
     height: 100%;
     position: fixed;

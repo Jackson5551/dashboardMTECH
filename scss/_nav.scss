@@ -7,6 +7,8 @@ nav {
     width: 100%;
     background-color: var.$primary-white;
     position: fixed;
+    border-bottom: 5px solid var.$prussian-blue;
+    z-index: 1;
 
     .items {
         display: flex;

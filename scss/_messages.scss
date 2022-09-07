@@ -2,9 +2,19 @@
 #inbox {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    border: 5px solid var.$prussian-blue;
+    position: fixed;
 }
 .email {
-    height: 100px;
+    height: fit-content;
     border: 1px solid #000000;
+    // border-bottom: 2.5px solid var.$prussian-blue;
+    // border-top: 2.5px solid var.$prussian-blue;
+    // border-left: 5px solid var.$prussian-blue;
+    // border-right: 5px solid var.$prussian-blue;
+    font-size: small;
+    padding: 10px;
 }

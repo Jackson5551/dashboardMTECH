@@ -1,12 +1,18 @@
 #inbox {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  border: 5px solid #1d3557;
+  position: fixed;
 }
 
 .email {
-  height: 100px;
+  height: fit-content;
   border: 1px solid #000000;
+  font-size: small;
+  padding: 10px;
 }
 
 nav {
@@ -16,6 +22,8 @@ nav {
   width: 100%;
   background-color: #ffffff;
   position: fixed;
+  border-bottom: 5px solid #1d3557;
+  z-index: 1;
 }
 nav .items {
   display: flex;
@@ -46,6 +54,7 @@ nav .profileArea {
 }
 
 #sidebar {
+  z-index: 2;
   font-family: sans-serif;
   height: 100%;
   position: fixed;
@@ -109,12 +118,32 @@ nav .profileArea {
 }
 
 #messaging {
-  overflow-y: auto;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 5px solid #1d3557;
+  height: 100vh;
+  position: fixed;
+  left: 488px;
+  max-width: fit-content;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+main {
+  position: relative;
+  top: 45px;
+  left: 192px;
+  max-width: calc(100% - 192px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+main #messaging {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
