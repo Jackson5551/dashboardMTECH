@@ -16,24 +16,28 @@
     padding-right: 20px;
     background-color: var.$primary-blue;
     overflow-y: auto;
-    .top{
+    transition: all 1s;
+
+    .top {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        span{
+
+        span {
             display: flex;
             align-self: flex-end;
             padding-top: 5px;
         }
     }
+
     // padding-top: 60px;
     // transition: all .75s;
     #logo {
-        background-image: url(../img/RobCo_logo.webp);
+        background-image: url(../img/image.png);
         background-position: center;
         background-size: cover;
-        // width: 17vh;
+        width: 17vh;
         height: 17vh;
     }
 
@@ -71,13 +75,23 @@
     }
 }
 
-@media (max-width: var.$breakpoint-desktop) {
-    #sidebar{
-        left: -200px;
+@media (min-width: var.$breakpoint-desktop) {
+    #sidebar {
+        left: 0px;
+        transition: all 1s;
     }
 }
 
-@media (min-width: var.$breakpoint-tablet) {
+@media (max-width: var.$breakpoint-tablet) {
+    #sidebar {
+        left: -200px;
+        transition: all 1s;
+    }
 }
 
-@media (min-width: var.$breakpoint-mobile) {}
+@media (min-width: var.$breakpoint-mobile) {
+    // #sidebar {
+    //         left: -200px;
+    //         transition: all 1s;
+    //     }
+}

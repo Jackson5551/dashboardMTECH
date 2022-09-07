@@ -27,7 +27,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   position: fixed;
-  border-bottom: 5px solid #1d3557;
+  border-bottom: 1px solid #D9D9D9;
   z-index: 1;
 }
 nav .items {
@@ -43,13 +43,14 @@ nav .searchBar {
   height: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: #D9D9D9;
 }
 nav .searchBar:focus {
   outline: none;
 }
 nav .searchArea {
   padding: 5px;
-  border: 1px solid #1D3557;
+  background-color: #D9D9D9;
 }
 nav .profileArea {
   display: flex;
@@ -89,6 +90,7 @@ nav .profileArea {
   padding-right: 20px;
   background-color: #1D3557;
   overflow-y: auto;
+  transition: all 1s;
 }
 #sidebar .top {
   display: flex;
@@ -102,9 +104,10 @@ nav .profileArea {
   padding-top: 5px;
 }
 #sidebar #logo {
-  background-image: url(../img/RobCo_logo.webp);
+  background-image: url(../img/image.png);
   background-position: center;
   background-size: cover;
+  width: 17vh;
   height: 17vh;
 }
 #sidebar #logout {
@@ -136,9 +139,16 @@ nav .profileArea {
   background-color: #112034;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+  #sidebar {
+    left: 0px;
+    transition: all 1s;
+  }
+}
+@media (max-width: 768px) {
   #sidebar {
     left: -200px;
+    transition: all 1s;
   }
 }
 #messaging {
@@ -170,6 +180,22 @@ main {
 }
 main #messaging {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    display: flex;
+  }
+  main #inbox {
+    width: 100%;
+  }
+  main #messaging {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

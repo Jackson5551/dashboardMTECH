@@ -7,7 +7,7 @@ nav {
     width: 100%;
     background-color: var.$primary-white;
     position: fixed;
-    border-bottom: 5px solid var.$prussian-blue;
+    border-bottom: 1px solid var.$primary-gray;
     z-index: 1;
     // left: 192px;
 
@@ -27,6 +27,7 @@ nav {
         height: 20px;
         margin-left: 10px;
         margin-right: 10px;
+        background-color: var.$primary-gray;
     }
 
     .searchBar:focus {
@@ -35,7 +36,8 @@ nav {
 
     .searchArea {
         padding: 5px;
-        border: 1px solid var.$primary-blue;
+        // border: 1px solid var.$primary-blue;
+        background-color: var.$primary-gray;
     }
 
     .profileArea {
